@@ -20,7 +20,6 @@ function addUsingStrings(numbersToAdd) {
     biggestNumber = 0, 
     // Make numbers into strings, then array of values, then reverse it
     numbers = numbersToAdd.map(function(number) {
-      if (typeof number != 'string' && typeof number != 'number') return null;
       number = number.toString().split('').reverse();
       if (number.length > biggestNumber) biggestNumber = number.length;
       return number;
